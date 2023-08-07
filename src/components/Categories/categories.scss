@@ -1,0 +1,25 @@
+.categories {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+
+  @media all and (max-width: 767px) {
+    flex-direction: column;
+  }
+
+  .categories__items {
+    background: rgba(241, 241, 241, 1);
+    height: max-content;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .categories__item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: max-content;
+    }
+  }
+}

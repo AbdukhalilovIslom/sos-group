@@ -1,0 +1,39 @@
+.slider__container {
+  .slider {
+    position: relative;
+    padding: 20px;
+    padding-block: 40px;
+    background-image: url("../../assets/images/Rectangle\ 1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    border-radius: 5px;
+
+    .slider__title {
+    }
+    .slider__date {
+    }
+    .slider__more {
+      width: max-content;
+      padding: 17px 28px;
+      background: #a20025;
+      color: #fff;
+    }
+    .slider__btns {
+      display: flex;
+      gap: 10px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      .slider_btn {
+        background-color: #00000063;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

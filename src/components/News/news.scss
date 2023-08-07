@@ -1,0 +1,123 @@
+.news {
+  .news__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      font-weight: 700;
+      line-height: 44px;
+      letter-spacing: 0em;
+    }
+
+    button {
+      color: rgba(162, 0, 37, 1);
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 17px;
+      letter-spacing: 0em;
+    }
+  }
+  .news__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    @media all and (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      .child2 {
+        display: none;
+      }
+    }
+    @media all and (max-width: 900px) {
+      gap: 15px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .news__card_f {
+      border: 1px solid rgba(219, 219, 219, 1);
+      height: max-content;
+      img {
+        display: block;
+        width: 100%;
+        height: 256px;
+        object-fit: cover;
+      }
+      .news__card_f__content {
+        padding-left: 30px;
+        @media all and (max-width: 767px) {
+          padding-left: 10px;
+        }
+
+        .news__card_f__title {
+          font-weight: 800;
+          line-height: 37px;
+          letter-spacing: 0em;
+
+          padding-right: 30px;
+        }
+        .news__card_f__date {
+          margin-top: 16px;
+          margin-bottom: 30px;
+          color: rgba(162, 0, 37, 1);
+        }
+        .news__card_f__btn {
+          width: 44px;
+          height: 44px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: auto;
+          margin-right: 0;
+          background-color: rgba(241, 241, 241, 1);
+          img {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+    }
+    .news__card_s {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      overflow-y: scroll;
+      max-height: 462px;
+      .news__card_s__card {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        border: 1px solid rgba(219, 219, 219, 1);
+
+        img {
+          display: block;
+          width: 90px;
+          height: 90px;
+          object-fit: cover;
+        }
+      }
+
+      &::-webkit-scrollbar {
+        width: 7px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #8a0000;
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        background-color: #570000;
+      }
+    }
+  }
+  .news__h3 {
+    font-weight: 700;
+    line-height: 37px;
+    letter-spacing: 0em;
+  }
+  .news__p {
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+  }
+}

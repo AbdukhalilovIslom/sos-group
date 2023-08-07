@@ -1,0 +1,40 @@
+.leatest {
+  .leatest__title {
+    font-weight: 700;
+    line-height: 37px;
+    letter-spacing: 0em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    .leatest__title__img {
+    }
+  }
+  .leatest__table {
+    width: 100%;
+    .leatest__table__h {
+      display: grid;
+      grid-template-columns: repeat(2, 25%) 50%;
+      span {
+        padding: 10px;
+        font-weight: 700;
+      }
+    }
+    hr {
+      background: rgba(219, 219, 219, 1);
+      height: 1px;
+      border: none;
+    }
+    .leatest__table__b {
+      display: grid;
+      grid-template-columns: repeat(2, 25%) 50%;
+      span {
+        padding: 10px;
+      }
+      span:nth-child(2) {
+        color: rgba(162, 0, 37, 1);
+      }
+    }
+  }
+}

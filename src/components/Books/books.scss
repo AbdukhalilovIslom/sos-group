@@ -1,0 +1,67 @@
+.books__bg {
+  padding-block: 0.83em;
+  background: rgba(255, 238, 223, 1);
+
+  .books__container {
+    .books__title {
+      display: flex;
+      gap: 20px;
+      position: relative;
+      .all__btn {
+        position: relative;
+        top: 3px;
+        color: rgba(162, 0, 37, 1);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0em;
+
+        @media all and (max-width: 550px) {
+          display: none;
+        }
+      }
+      .slider__btns {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: flex;
+        gap: 10px;
+
+        .slider__btn {
+          background-color: #00000049;
+          width: 30px;
+          height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+          }
+        }
+      }
+    }
+
+    .books {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+
+      @media all and (max-width: 1439px) {
+        gap: 17px;
+      }
+      @media all and (max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+      }
+      @media all and (max-width: 767px) {
+        gap: 10px;
+      }
+      @media all and (max-width: 550px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+      }
+      @media all and (max-width: 375px) {
+        gap: 8px;
+      }
+    }
+  }
+}

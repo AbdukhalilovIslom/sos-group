@@ -1,0 +1,23 @@
+.footer {
+  color: #fff;
+  background: rgba(160, 112, 72, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-inline: 60px;
+
+  @media all and (max-width: 1439px) {
+    padding-inline: 50px;
+  }
+  @media all and (max-width: 1024px) {
+    padding-inline: 40px;
+  }
+  @media all and (max-width: 767px) {
+    padding-inline: 30px;
+    justify-content: center;
+  }
+  @media all and (max-width: 375px) {
+    padding-inline: 10px;
+  }
+}
